@@ -4,7 +4,7 @@ function App() {
 
   return (
     <div>
-      <h1>Gowtham's Portfolio</h1>
+      <h1>Under construction...</h1>
     </div>
   )
 }
