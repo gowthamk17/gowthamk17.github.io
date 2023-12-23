@@ -1,7 +1,7 @@
 function App() {
 
   return (
-    <div>
+    <div className="h-screen w-screen">
       <h1 className="">
         Coming soon...
       </h1>
