@@ -1,11 +1,12 @@
+import Hero from "./Components/Hero"
+import NavBar from "./Components/NavBar"
+
 function App() {
 
   return (
-    <div className="h-screen w-screen">
-      <h1 className="">
-        Coming soon...
-      </h1>
-      <a href="https://github.com/gowthamk17">Github</a>
+    <div className="">
+        <NavBar />
+        <Hero />
     </div>
   )
 }
