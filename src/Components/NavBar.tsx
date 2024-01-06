@@ -7,14 +7,14 @@ const navLinkCss = "list-none m-4 text-gray-500 hover:text-gray-900";
 function NavBar() {
 
     return (
-        <div className='m-6 flex justify-between items-center'>
-            <img className='inline w-1/12' src={logo} alt="gowthamk17" />
+        <div className='w-full p-6 flex justify-between items-center absolute top-0 bg-white'>
+            <a href="#"><img className='w-40' src={logo} alt="gowthamk17" /></a>
             <ul className='flex items-center'>
-                <NavLink linkTitle="Home"/>
-                <NavLink linkTitle="About"/>
-                <NavLink linkTitle="Tech Stack"/>
-                <NavLink linkTitle="Projects"/>
-                <NavLink linkTitle="Contact"/>
+                <NavLink linkTitle="Home" linkId=""/>
+                <NavLink linkTitle="About" linkId="about"/>
+                <NavLink linkTitle="Tech Stack" linkId="tech_stack"/>
+                <NavLink linkTitle="Projects" linkId="projects"/>
+                <NavLink linkTitle="Contact" linkId="contact"/>
                 <a href="https://github.com/gowthamk17" target='_blank'>
                     <FaGithub size={30} className={navLinkCss}  />
                 </a>
@@ -29,10 +29,10 @@ function NavBar() {
     );
 }
 
-function NavLink({ linkTitle }) {
+function NavLink({ linkTitle, linkId }) {
     return (
         <li className={navLinkCss} >
-            <a href={"#"+linkTitle}>{ linkTitle }</a>
+            <a href={"#"+linkId}>{ linkTitle }</a>
         </li>
     );
 }
