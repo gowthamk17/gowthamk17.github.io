@@ -7,7 +7,7 @@ const navLinkCss = "list-none m-4 text-gray-500 hover:text-gray-900";
 function NavBar() {
 
     return (
-        <div className='w-full p-6 flex justify-between items-center absolute top-0 bg-white'>
+        <div className='w-full p-6 flex justify-between items-center fixed top-0 bg-white text-lg'>
             <a href="#"><img className='w-40' src={logo} alt="gowthamk17" /></a>
             <ul className='flex items-center'>
                 <NavLink linkTitle="Home" linkId=""/>

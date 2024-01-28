@@ -1,5 +1,7 @@
 import Hero from "./Components/Hero"
 import NavBar from "./Components/NavBar"
+import Projects from "./Components/Projects"
+import TechStack from "./Components/TechStack"
 
 function App() {
 
@@ -7,6 +9,8 @@ function App() {
     <div className="">
         <NavBar />
         <Hero />
+        <TechStack />
+        <Projects />
     </div>
   )
 }
